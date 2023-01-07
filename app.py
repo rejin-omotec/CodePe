@@ -49,6 +49,10 @@ def index():
 def block_hindi():
     return render_template('block_hindi.html')
 
+@app.route('/index')
+def load_index():
+    return render_template('index.html')
+
 @app.route('/block_bengali')
 def block_bengali():
     return render_template('block_bengali.html')
